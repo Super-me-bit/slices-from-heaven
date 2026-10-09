@@ -70,8 +70,8 @@ var items=[
 {c:"Birthday",img:"images/14.webp",n:"Barbie birthday cake",d:"Pink buttercream, butterflies and bow"},
 {c:"Birthday",img:"images/19.webp",n:"Stitch birthday cake",d:"Pink and blue ombre with butterflies"},
 {c:"Graduation",img:"images/16.webp",n:"Congrats graduate cake",d:"Gold and black spheres with gold leaf"},
-{c:"Elegant",img:"images/4.webp",n:"Proverbs floral cake",d:"Pink piped blooms and green leaves"},
-{c:"Elegant",img:"images/2.webp",n:"God's Masterpiece cake",d:"Classic white piping with silver pearls"}];
+{c:"Elegant",img:"images/04.webp",n:"Proverbs floral cake",d:"Pink piped blooms and green leaves"},
+{c:"Elegant",img:"images/02.webp",n:"God's Masterpiece cake",d:"Classic white piping with silver pearls"}];
 var cats=["All"].concat(items.map(function(i){return i.c}).filter(function(v,i,a){return a.indexOf(v)===i}));
 var cur="All",tabs=document.getElementById("tabs"),grid=document.getElementById("grid");
 function draw(){tabs.innerHTML="";cats.forEach(function(c){var b=document.createElement("button");b.textContent=c;b.setAttribute("aria-pressed",c===cur);b.onclick=function(){cur=c;draw()};tabs.appendChild(b)});
